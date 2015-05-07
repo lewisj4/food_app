@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
-  resources :users
+  root to: 'application#index'
+  
   resources :meals
+  resources :users do
+    member do
+      put 'add_meal', as: :add_meal_to
+    end
+  end  
   resources :foods
+
+  get 'sessions/new' => 'sessions#new'
+  post 'sessions' => 'sessions#create'
+  delete 'sessions' => 'sessions#destroy'
 end
   
 

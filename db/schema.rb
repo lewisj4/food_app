@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506200757) do
+ActiveRecord::Schema.define(version: 20150507154655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,8 +25,16 @@ ActiveRecord::Schema.define(version: 20150506200757) do
     t.integer "protein"
   end
 
+  create_table "foods_meals", id: false, force: :cascade do |t|
+    t.integer "meal_id", null: false
+    t.integer "food_id", null: false
+  end
+
+  add_index "foods_meals", ["food_id"], name: "index_foods_meals_on_food_id", using: :btree
+  add_index "foods_meals", ["meal_id"], name: "index_foods_meals_on_meal_id", using: :btree
+
   create_table "meals", force: :cascade do |t|
-    t.string  "foods"
+    t.string  "name"
     t.integer "user_id"
   end
 
@@ -36,4 +44,5 @@ ActiveRecord::Schema.define(version: 20150506200757) do
     t.string "full_name"
   end
 
+  add_foreign_key "meals", "users"
 end

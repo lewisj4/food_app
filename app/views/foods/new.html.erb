@@ -1,0 +1,21 @@
+<%= form_for @food do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :calories %>
+	<%= f.text_field :calories %>
+
+	<%= f.label :fat_calories %>
+	<%= f.text_field :fat_calories %>
+
+	<%= f.label :carbohydrates %>
+	<%= f.text_field :carbohydrates %>
+
+	<%= f.label :fats %>
+	<%= f.text_field :fats %>
+
+	<%= f.label :protein %>
+	<%= f.text_field :protein %>
+
+	<%= f.submit %>
+	<% end %>

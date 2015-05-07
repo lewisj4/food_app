@@ -1,0 +1,5 @@
+<%= link_to '+ Meal', new_meal_path %>
+<hr>
+<% @meals.each do |meal| %>
+	<li> <%= link_to meal.name, meal %> </li>
+<% end %>	
