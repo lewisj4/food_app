@@ -8,6 +8,8 @@ class CreateFoods < ActiveRecord::Migration
     	t.integer :carbohydrates
     	t.integer :fats 
     	t.integer :protein
+
+        t.timestamps
     end
   end
 end

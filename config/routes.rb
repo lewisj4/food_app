@@ -1,18 +1,37 @@
+# Rails.application.routes.draw do
+#   root to: 'application#index'
+  
+#   resources :meals
+#   resources :users do
+#     member do
+#       put 'add_meal', as: :add_meal_to
+#     end
+#   end  
+#   resources :foods
+
+#   get 'sessions/new' => 'sessions#new'
+#   post 'sessions' => 'sessions#create'
+#   delete 'sessions' => 'sessions#destroy'
+# end
+
 Rails.application.routes.draw do
   root to: 'application#index'
   
   resources :meals
   resources :users do
     member do
-      put 'add_meal', as: :add_meal_to
+      post 'add_meal', as: :add_meal_to
+      get 'add_meal', from: :add_meal_to
     end
   end  
   resources :foods
 
   get 'sessions/new' => 'sessions#new'
+  get 'sessions/current_user' => 'sessions#current_user'
   post 'sessions' => 'sessions#create'
   delete 'sessions' => 'sessions#destroy'
 end
+
   
 
 

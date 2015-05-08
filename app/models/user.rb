@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 	has_secure_password
 
-	def add_meal
-		self.meals.push(meal)
+	has_many :meals
+
+	def add_meal(meal)
 	end
 end

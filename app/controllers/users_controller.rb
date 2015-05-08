@@ -7,22 +7,28 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
+	def show
+		@user = User.find(params[:id])
+	end
+
+	def add_meal(meal)
+		user = User.find(session[:current_user])
+		meal = Meal.find(params[:id])
+
+		user.add_meal(params[:id])
+
+		redirect_to user_path(meal)
+	end
+
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			redirect_to root_path
+			redirect_to meals_path
 		else
 			render :new
 		end		
 	end
 
-	def add_meal
-		user = User.find(session[:current_user])
-		meal = Meal.find(params[:meal_id])
-
-		user.add_meal(meal)
-		redirect_to(meal_path(meal))
-	end
 
 	private
 	def user_params
