@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
 		user.add_meal(params[:id])
 
-		redirect_to user_path(meal)
+		redirect_to meals_path
 	end
 
 	def create
