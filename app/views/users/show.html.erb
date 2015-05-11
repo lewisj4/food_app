@@ -1,0 +1,12 @@
+<h1> Your Meal Profile </h1>
+
+<%= link_to 'Back', root_path %><br>
+<br>
+<%= link_to '+ Meal', new_meal_path %><br>
+<hr>
+
+<% @user.meals.each do |meal| %>
+	<li> <%= link_to meal.name, meal %> </li>
+
+<% end %>
+

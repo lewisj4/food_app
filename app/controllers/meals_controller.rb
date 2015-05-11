@@ -7,7 +7,10 @@ class MealsController < ApplicationController
 	end
 
 	def show
+		@user = User.find(session[:current_user])
 		@meal = Meal.find(params[:id])
+		#binding.pry
+		#meal.user_id = current_user.id
 	end
 
 	def new
@@ -18,16 +21,28 @@ class MealsController < ApplicationController
 		self.meals.push(meal)
 	end
 
+	def add_food
+		@food = Food.find(params[:id])
+		@user = User.find(session[:current_user])
+		@meal = Meal.find(params[:id])
+		# binding.pry
+
+		@meal.foods << @food
+
+		redirect_to add_food_meal_path
+		
+	end
+
 	def create
 		@meal = Meal.new(meal_params)
-		#binding.pry gets hit here
-		@current_user = session[:current_user]
-		@meal.save
+		@user = User.find(session[:current_user])
+		@meal.user_id = current_user.id
 
-		current_user.meals << @meal
-		if current_user.add_meal(params[:meal])
-        	#binding.pry doesn't get hit here
-        	redirect_to add_meal_user_path
+      @user.meals << @meal
+
+    if @meal.save!
+
+        redirect_to new_food_path
 		else
 			render :new
 		end		
@@ -38,4 +53,10 @@ class MealsController < ApplicationController
 	def meal_params
 		params.require(:meal).permit(:name)
 	end	
+
+	def user_only
+		@user = User.find(session[:current_user])
+		@meal = Meal.find(params[:id])
+			(@meal.user_id == current_user.id) ? true : false
+	end
 end	

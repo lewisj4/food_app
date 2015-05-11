@@ -17,7 +17,12 @@
 Rails.application.routes.draw do
   root to: 'application#index'
   
-  resources :meals
+  resources :meals do
+    member do
+      post 'add_food', as: :add_food_to
+      get 'add_food', from: :add_food_to
+    end 
+  end 
   resources :users do
     member do
       post 'add_meal', as: :add_meal_to

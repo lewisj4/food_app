@@ -15,9 +15,17 @@ class FoodsController < ApplicationController
 		@food = Food.new
 	end
 
+	def add_food(food)
+		self.foods.push(food)
+	end
+	
 	def create
 		@food = Food.new(food_params)
-		if @food.save
+		@meal = Meal.find_by(params[:id])
+
+		@meal.foods << @food
+
+		if @food.save!
 			redirect_to @food
 		else
 			render :new

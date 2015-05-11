@@ -1,21 +1,26 @@
+<%= link_to 'Back to Meal Profile', user_path(:id) %><br>
+<br>
+<%= link_to '+ Another Food Item', new_food_path  %>
 <%= form_for @food do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
 
-	<%= f.label :calories %>
-	<%= f.text_field :calories %>
+	<%= f.label :name %><br>
+	<%= f.text_field :name %><br>
+	
+	<%= f.label :calories %><br>
+	<%= f.text_field :calories %><br>
+	
+	<%= f.label :fat_calories %><br>
+	<%= f.text_field :fat_calories %><br>
+	
+	<%= f.label :carbohydrates %><br>
+	<%= f.text_field :carbohydrates %><br>
+	
+	<%= f.label :fats %><br>
+	<%= f.text_field :fats %><br>
+	
+	<%= f.label :protein %><br>
+	<%= f.text_field :protein %><br>
 
-	<%= f.label :fat_calories %>
-	<%= f.text_field :fat_calories %>
+	<%= f.submit %><br>
 
-	<%= f.label :carbohydrates %>
-	<%= f.text_field :carbohydrates %>
-
-	<%= f.label :fats %>
-	<%= f.text_field :fats %>
-
-	<%= f.label :protein %>
-	<%= f.text_field :protein %>
-
-	<%= f.submit %>
-	<% end %>
+<% end %>

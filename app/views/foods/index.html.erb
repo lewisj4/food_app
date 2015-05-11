@@ -1,5 +1,18 @@
-<h1> Foods Foods Foods </h1>
+<h1> Food Breakdown </h1>
+
+<%= link_to '+ Food', new_food_path %><br>
+<hr>
+
+<% @foods.each do |food| %>
+	<li> <%= link_to food.name, food %> </li>
+<% end %>
 
 <%#= link_to 'Back to meal', meal_path(@meal.id) %>
 
-<%= link_to 'Back to meal', meals_path %>
+<!-- meal_path(:id)-> cannot find meal with 'id'= id -->
+
+<%= link_to 'Back to meal', meal_path(:id) %>
+
+
+
+

@@ -1,1 +1,29 @@
-<h1> Foods Foods Foods </h2>
+<h1> Nutritional Breakdown </h2>
+
+	<h2 class = "name">
+		<%= "Food: #{@food[:name]}" %>
+	</h2>
+
+	<h2 class = "calories">
+		<%= "Calories: #{@food[:calories]} calories" %>
+	</h2>
+
+	<h2 class = "fat_calories">
+		<%= "Fat Calories: #{@food[:fat_calories]} calories" %>
+	</h2>
+
+	<h2 class = "carbohydrates">
+		<%= "Carbs: #{@food[:carbohydrates]} g\'s" %>
+	</h2>
+
+	<h2 class = "fats">
+		<%= "Fat: #{@food[:fats]} g\'s" %>
+	</h2>
+
+	<h2 class = "protein">
+		<%= "Protein: #{@food[:protein]} g\'s" %>
+	</h2>
+
+	<%= link_to 'Meal', add_food_meal_path %>
+
+

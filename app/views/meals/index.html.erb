@@ -2,6 +2,8 @@
 <br>
 <%= link_to '+ Meal', new_meal_path %><br>
 <hr>
+<!--could this be where I need to set 
+	a specifc user  so that all meals don't show up for all users-->
 <% @meals.each do |meal| %>
 	<li> <%= link_to meal.name, meal %> </li>
 <% end %>	

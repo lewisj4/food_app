@@ -8,16 +8,18 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		@user = User.find(params[:id])
+		@user = User.find(session[:current_user])
 	end
 
-	def add_meal(meal)
-		user = User.find(session[:current_user])
-		meal = Meal.find(params[:id])
+	def add_meal
+		@user = User.find(session[:current_user])
+		@meal = Meal.find(params[:id])
+		# binding.pry
 
-		user.add_meal(params[:id])
+		@user.meals << @meal
 
-		redirect_to meals_path
+		redirect_to user_path(params[:id])
+		
 	end
 
 	def create
@@ -35,3 +37,12 @@ class UsersController < ApplicationController
 		params.require(:user).permit(:full_name, :username, :password, :password_confirmation)
 	end
 end
+
+# def add_meal
+	# 	@meal = Meal.find(params[:id])
+	# 	@user = User.find(session[:current_user])
+
+	# 	@user.meals << @meal
+
+	# 	redirect_to meals_path
+	# end
