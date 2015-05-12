@@ -22,7 +22,7 @@ class FoodsController < ApplicationController
 	def create
 		@food = Food.new(food_params)
 		@meal = Meal.find_by(params[:id])
-
+		@food.meal_id = @meal.id
 		@meal.foods << @food
 
 		if @food.save!

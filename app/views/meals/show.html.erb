@@ -1,6 +1,7 @@
 <%= link_to 'Back to meals', meals_path %>
 <%= link_to 'Show Ingredients', food_path %>
 <h2><%= @meal.name %></h2>
+<%= link_to '+ Food to Meal', new_food_path %>
 
 
 <% @meal.foods.each do |food| %>

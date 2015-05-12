@@ -9,8 +9,8 @@ class MealsController < ApplicationController
 	def show
 		@user = User.find(session[:current_user])
 		@meal = Meal.find(params[:id])
-		#binding.pry
-		#meal.user_id = current_user.id
+		@food = Food.find(params[:id])
+		@meal.user_id = current_user.id
 	end
 
 	def new
@@ -22,15 +22,18 @@ class MealsController < ApplicationController
 	end
 
 	def add_food
+		@meal = Meal.find_by(params[:id])
 		@food = Food.find(params[:id])
-		@user = User.find(session[:current_user])
-		@meal = Meal.find(params[:id])
-		# binding.pry
+		#binding.pry
 
 		@meal.foods << @food
 
-		redirect_to add_food_meal_path
-		
+		if @food.save!
+
+			redirect_to meal_path(params[:id])
+		else
+			render @food
+		end
 	end
 
 	def create
@@ -41,7 +44,7 @@ class MealsController < ApplicationController
       @user.meals << @meal
 
     if @meal.save!
-
+    	binding.pry
         redirect_to new_food_path
 		else
 			render :new
