@@ -1,9 +1,14 @@
-<%= form_tag sessions_path do %>
-	<%= label_tag :username %><br>
-	<%= text_field_tag :username %><br>
-	<br>
-	<%= label_tag :password %><br>
-	<%= password_field_tag :password %><br>
-	<br>
-	<%= submit_tag  'Log In' %><br>
-<% end %>	
+
+<div id= 'login_form'>
+	<%= form_tag sessions_path do %>
+	<div id= 'login_fields'>
+		<a id="username"><%= label_tag :username, 'Username:' %></a><br>
+		<a id="username_input"><%= text_field_tag :username %></a><br>
+		<br>
+		<a id="password"><%= label_tag :password, 'Password:' %></a><br>
+		<a ="password_input"><%= password_field_tag :password %></a><br>
+		<br>
+		<%= submit_tag  'Log In' %><br>
+	<% end %>	
+	</div>
+</div>	

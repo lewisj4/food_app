@@ -1,12 +1,18 @@
-<h1> Your Meal Profile </h1>
+<div id = 'meal_profile'>
+	<h1> Your Meal Profile </h1>
 
-<%= link_to 'Back', root_path %><br>
-<br>
-<%= link_to '+ Meal', new_meal_path %><br>
-<hr>
+	<%= button_tag(:class => 'to_start_button') do %>
+		<%= link_to 'Back', root_path %><br>
+	<% end %>	<br>
+	<br>
+	<%= button_tag(:class => 'new_meal_button') do %>
+		<%= link_to '+ Meal', new_meal_path %><br>
+	<% end %>	
+	<hr>
 
-<% @user.meals.each do |meal| %>
-	<li> <%= link_to meal.name, meal %> </li>
+	<% @user.meals.each do |meal| %>
+		<li class= 'single_meal'> <%= link_to meal.name, meal %> </li>
 
-<% end %>
+	<% end %>
+</div>
 

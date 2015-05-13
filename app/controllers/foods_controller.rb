@@ -15,16 +15,35 @@ class FoodsController < ApplicationController
 		@food = Food.new
 	end
 
+	def update
+		@food = Food.find(params[:id])
+		
+		results = Nutritionix.search(@food.name)
+		
+		@food.update(food_params)
+
+
+		redirect_to food_path(@food)
+	end
+
 	def add_food(food)
 		self.foods.push(food)
 	end
+
+	def add_info
+		@food = Food.find(params[:id])	
+		@results = Nutritionix.search(@food.name) 
+		# binding.pry
+		
+		# redirect_to add_info_food_path
+	 	# render :add_info_food
+	  render json: @results
+	end	
 	
 	def create
 		@food = Food.new(food_params)
-		@meal = Meal.find_by(params[:id])
-		@food.meal_id = @meal.id
+		@meal = Meal.find(food_params[:meal_id])
 		@meal.foods << @food
-
 		if @food.save!
 			redirect_to @food
 		else
@@ -32,10 +51,11 @@ class FoodsController < ApplicationController
 		end		
 	end
 
+
 	private
 	def food_params
 		params.require(:food).permit(:name, :calories, 
 																:fat_calories, :carbohydrates,
-																:fats, :protein)
+																:fats, :protein, :meal_id)
 	end
 end

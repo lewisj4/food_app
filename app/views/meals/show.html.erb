@@ -1,9 +1,7 @@
-<%= link_to 'Back to meals', meals_path %>
-<%= link_to 'Show Ingredients', food_path %>
+<%= link_to 'Back to meals', user_path(session[:current_user]) %>
 <h2><%= @meal.name %></h2>
-<%= link_to '+ Food to Meal', new_food_path %>
-
-
+<%= link_to '+ Food', add_food_meal_path(@meal) %><br>
+<hr>
 <% @meal.foods.each do |food| %>
 	<li><%= link_to food.name, food %></li>
 <% end %>

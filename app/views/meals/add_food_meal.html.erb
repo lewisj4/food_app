@@ -1,0 +1,32 @@
+<div id= 'food_meal'>
+	<h4><%= link_to 'Back to Meal Profile', user_path(session[:current_user]) %><h4><br>
+	<br>
+
+<div id= 'food_form'>
+	<%= form_for @food do |f| %>
+	
+		<a><%= f.label :name, 'Name:' %></a><br>
+		<a><%= f.text_field :name %></a><br>
+		<br>
+		<a><%= f.label :calories, 'Calories:' %></a><br>
+		<a><%= f.text_field :calories %></a><br>
+		<br>
+		<a><%= f.label :fat_calories, 'Fat Calories:' %></a><br>
+		<a><%= f.text_field :fat_calories %><br>
+		<br>
+		<a><%= f.label :carbohydrates, 'Carbohydrates:' %></a><br>
+		<a><%= f.text_field :carbohydrates %><br>
+		<br>
+		<a><%= f.label :fats, 'Fat:' %></a><br>
+		<a><%= f.text_field :fats %></a><br>
+		<br>
+		<a><%= f.label :protein, 'Protein:' %></a><br>
+		<a><%= f.text_field :protein %></a><br>
+		<br>
+		<%= f.hidden_field :meal_id, :value => params[:id] %><br>
+		<%= f.submit %><br>
+	
+	<% end %>
+
+</div>	
+</div>

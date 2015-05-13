@@ -1,4 +1,4 @@
-<%= link_to 'Back to meals', user_path(:id) %><br>
+<%= link_to 'Back to meals', user_path(session[:current_user]) %><br>
 <br>
 <%= form_for @meal do |f| %>
 

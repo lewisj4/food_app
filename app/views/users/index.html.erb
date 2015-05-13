@@ -1,3 +1,5 @@
 <h1> Meal Logg.r </h1>
 
-<%= link_to 'Record Meal', user_path(:id)  %>
+<%= link_to 'Record Meal', user_path(session[:current_user]) %>
+
+<!-- File no longer needed -->

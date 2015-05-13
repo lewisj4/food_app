@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   
   resources :meals do
     member do
-      post 'add_food', as: :add_food_to
+      post 'added_food_to', as: :added_food_to_meal
       get 'add_food', from: :add_food_to
     end 
   end 
@@ -29,7 +29,12 @@ Rails.application.routes.draw do
       get 'add_meal', from: :add_meal_to
     end
   end  
-  resources :foods
+  resources :foods do 
+    member do
+      post 'added_info_to', as: :added_info_to_food
+      get 'add_info', from: :add_info_to
+    end  
+  end
 
   get 'sessions/new' => 'sessions#new'
   get 'sessions/current_user' => 'sessions#current_user'
