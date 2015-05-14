@@ -46,6 +46,6 @@ group :development, :test do
 
   gem 'pry-rails'
 
-  gem 'render_anywhere'
+  gem 'rails_12factor'
 end
 
