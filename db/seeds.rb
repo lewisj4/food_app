@@ -220,3 +220,183 @@ infos = Information.create([
 			"nf_serving_size_unit":"serving"
 		}
 	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"529e7df8f9655f6d3500302b",
+		"score":2.8452377,
+		"fields":{
+			"item_id":"529e7df8f9655f6d3500302b",
+			"item_name":"Breaded Chicken Cutlet",
+			"brand_id":"513fbc1283aa2dc80c0005fc",
+			"brand_name":"Wrapido",
+			"nf_calories":230,
+			"nf_calories_from_fat":50,
+			"nf_total_fat":6,
+			"nf_total_carbohydrate":15,
+			"nf_protein":30,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"54b6d716574ede727edb3d65",
+		"score":2.7189207,
+		"fields":{
+			"item_id":"54b6d716574ede727edb3d65",
+			"item_name":"Chicken Parmesan Cutlet",
+			"brand_id":"51db37b0176fe9790a8983eb",
+			"brand_name":"Archer Farms",
+			"nf_calories":270,
+			"nf_calories_from_fat":110,
+			"nf_total_fat":13,
+			"nf_total_carbohydrate":8,
+			"nf_protein":31,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"53444f479a631f1645ed01e0",
+		"score":2.6487665,
+		"fields":{
+			"item_id":"53444f479a631f1645ed01e0",
+			"item_name":"Chicken Cutlet Paramigiana",
+			"brand_id":"521b95464a56d006cae29d82",
+			"brand_name":"Gigi Cafe",
+			"nf_calories":680,
+			"nf_calories_from_fat":199,
+			"nf_total_fat":39,
+			"nf_total_carbohydrate":68,
+			"nf_protein":39,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+			}
+		},
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"ae497599faa6dc3757e03e7d",
+		"score":2.6487665,
+		"fields":{
+			"item_id":"ae497599faa6dc3757e03e7d",
+			"item_name":"Chicken Cutlet & Cheddar",
+			"brand_id":"513fbc1283aa2dc80c0006e3",
+			"brand_name":"Cafe Metro",
+			"nf_calories":680,
+			"nf_calories_from_fat":230,
+			"nf_total_fat":26,
+			"nf_total_carbohydrate":57,
+			"nf_protein":53,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"513fceb575b8dbbc2100173d",
+		"score":11.428111,
+		"fields":{
+			"item_id":"513fceb575b8dbbc2100173d",
+			"item_name":"Tomato - 1 large whole (3\" dia)",
+			"brand_id":"513fcc648110a4cafb90ca5e",
+			"brand_name":"USDA",
+			"nf_calories":32.76,
+			"nf_calories_from_fat":3.28,
+			"nf_total_fat":0.36,
+			"nf_total_carbohydrate":7.08,
+			"nf_protein":1.6,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"513fceb575b8dbbc21001744",
+		"score":11.340756,
+		"fields":{
+			"item_id":"513fceb575b8dbbc21001744",
+			"item_name":"Tomato - 1 slice, thick/large (1/2\" thick)",
+			"brand_id":"513fcc648110a4cafb90ca5e",
+			"brand_name":"USDA",
+			"nf_calories":4.86,
+			"nf_calories_from_fat":0.49,
+			"nf_total_fat":0.05,
+			"nf_total_carbohydrate":1.05,
+			"nf_protein":0.24,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"513fceb575b8dbbc2100173e",
+		"score":11.308048,
+		"fields":{
+			"item_id":"513fceb575b8dbbc2100173e",
+			"item_name":"Tomato - 1 cherry",
+			"brand_id":"513fcc648110a4cafb90ca5e",
+			"brand_name":"USDA",
+			"nf_calories":3.06,
+			"nf_calories_from_fat":0.31,
+			"nf_total_fat":0.03,
+			"nf_total_carbohydrate":0.66,
+			"nf_protein":0.15,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"513fceb575b8dbbc21001745",
+		"score":11.280885,
+		"fields":{
+			"item_id":"513fceb575b8dbbc21001745",
+			"item_name":"Tomato - 1 cup cherry tomatoes",
+			"brand_id":"513fcc648110a4cafb90ca5e",
+			"brand_name":"USDA",
+			"nf_calories":26.82,
+			"nf_calories_from_fat":2.68,
+			"nf_total_fat":0.3,
+			"nf_total_carbohydrate":5.8,
+			"nf_protein":1.31,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	},
+
+	{
+		"index":"f762ef22-e660-434f-9071-a10ea6691c27",
+		"type":"item",
+		"id":"546e0ef22a7b4ad96fb2478b",
+		"score":4.2414527,
+		"fields":{
+			"item_id":"546e0ef22a7b4ad96fb2478b",
+			"item_name":"General Tso's Chicken",
+			"brand_id":"51db380f176fe9790a89b1c0",
+			"brand_name":"InnovAsian Cuisine",
+			"nf_calories":460,
+			"nf_calories_from_fat":100,
+			"nf_total_fat":11,
+			"nf_total_carbohydrate":78,
+			"nf_protein":14,
+			"nf_serving_size_qty":1,
+			"nf_serving_size_unit":"serving"
+		}
+	}
+
