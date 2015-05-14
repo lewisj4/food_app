@@ -16,6 +16,9 @@
 
  @import url(//fonts.googleapis.com/css?family=Righteous);
  @import url(//fonts.googleapis.com/css?family=Revalia);
+ @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+ @import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
+ @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 
 
 
@@ -29,10 +32,10 @@
 
 #session_title {
   box-sizing: content-box;
-  background-image: url('title_background2.png');
-  border: 5px solid black;
+  background-image: url('title_bg2.png');
+  border: 2px solid black;
   border-radius: 17px;
-  font: normal 16px/1 "Revalia", Helvetica, sans-serif;
+  font-family: "Revalia";
   font-weight: bold;
   color: #85daef;
   text-overflow: ellipsis;
@@ -41,31 +44,34 @@
   margin-right: auto;
   width: 273px;
   padding-left:12px;
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
 }
 
 #sign_in_nav {
   box-sizing: content-box;
 	background-image: url('title_background1.png');
-	height: 90px;
-	width: 188px;
+	height: 100px;
+	width: 190px;
   position: relative;
 	margin-top: 60px;
 	margin-left: auto;
   margin-right: auto;
   border: 2px solid;
   border-radius: 17px;
-  font: normal 16px/1 "Annie Use Your Telescope", Helvetica, sans-serif;
+  font-family: "Annie Use Your Telescope";
+  font-size: 120%;
   color: black;
   text-overflow: ellipsis;
-  box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
 }
 
 #login_link {
-	margin-left: 12px;
+	margin-left: 35px;
+  margin-top: 100px;
 }
 
 #logout_link {
-	margin-left: 15px;
+	margin-left: 60px;
 }
 
 #login_form {
@@ -79,11 +85,11 @@
   width: 220px;
   height: 170px;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 120px;
   border-radius: 17px;
-  font: normal 16px/1 "Annie Use Your Telescope", Helvetica, sans-serif;
+  font-family:"Annie Use Your Telescope";
   color: black;
-  box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
   text-overflow: ellipsis; 
 }
 
@@ -96,40 +102,39 @@
   margin-left: auto;
   margin-right: auto;
   width: 220px;
-  height: 250px;
+  height: 310px;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
   border-radius: 17px;
-  font: normal 16px/1 "Annie Use Your Telescope", Helvetica, sans-serif;
-  color: black;
-  box-shadow: 50px 50px 75px 30px rgba(94,89,89,0.2);
+  font-family: "Annie Use Your Telescope";
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
   text-overflow: ellipsis;
 }
 
 #username, #password, #username_input, #password_input,
 #full_name_create, #username_create, #password_create,
 #password_confirmation_create {
-	-webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   border: none;
   padding-bottom: 5px;
-  /*-webkit-border-radius: 17px;*/
-  /*border-radius: 17px;*/
-  font: normal 16px/1 "Annie Use Your Telescope", Helvetica, sans-serif;
+  border-radius: 17px;
+  font-family: "Annie Use Your Telescope";
   color: #5bcdb8;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.2) ;
-  box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.2);
 }
 
 #meal_recorder h1 {
 	font-family: 'Righteous', cursive;
+  border: 5px solid;
+  width: 150px;
+  background-image: url('meal_background1.png');
 }
 
 #meal_profile h1 {
   font-family: 'Righteous', cursive;
+  border: 5px solid;
+  width: 150px;
+  background-image: url('meal_background1.png');
 }
 
 .to_start_button a, .new_meal_button a {
@@ -141,13 +146,205 @@
 }
 
 .single_meal {
+  background-image: url('food_background2.png');
+  position: relative;
   border: 2px solid;
+  border-radius: 20px;
   width: 150px;
   padding-left: 15px;
   list-style-type: none;
   text-align: center;
+  margin-top: 2vw;
+  margin-left: 43vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 120%;
 }
 
 .single_meal a {
   text-decoration: none;
+  color: black;
+  font-size: 125%;
+  font-family: 'Indie Flower';
+}
+
+.back_meals_button {
+  width: 80px;
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 350px;
+}
+
+.back_meals_button a {
+  text-decoration: none;
+}
+
+#meal_name {
+  box-sizing: content-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: 'Indie Flower';
+  font-size: 200%;
+  font-weight: bold;
+  color: black;
+  text-overflow: ellipsis;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
+}
+
+a#meal_name {
+  background-image: url('bluewood.png');
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#meal_create {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#meal_form {
+  box-sizing: content-box;
+  background-image: url('greenwood.png');
+  background-repeat: repeat-x, repeat;
+  border: 2px solid;
+  position: relative;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 250px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 17px;
+  font-family: "Annie Use Your Telescope";
+  font-size: 100%;
+  color: black;
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
+  text-overflow: ellipsis; 
+}
+
+.to_meal_profile a {
+  text-decoration: none;
+  color: black;
+}
+
+#food_form {
+  box-sizing: content-box;
+  background-image: url('greenwood.png');
+  background-repeat: repeat-x, repeat;
+  border: 2px solid;
+  position: relative;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 480px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 17px;
+  font-family: "Annie Use Your Telescope";
+  font-size: 100%;
+  color: black;
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.2);
+  text-overflow: ellipsis; 
+}
+
+.food_info {
+  width: 100px;
+}
+
+.food_info a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 110%;
+}
+
+#show_food {
+  box-sizing: content-box;
+  background-image: url('bluewood.png');
+  background-repeat: repeat-x, repeat;
+  border: 2px solid;
+  position: relative;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 600px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 17px;
+  font-family: "Annie Use Your Telescope";
+  font-size: 120%;
+  color: black;
+  box-shadow: 4px 4px 9px 2px rgba(0,0,0,1);
+  text-overflow: ellipsis;
+}
+
+.to_meals {
+  width: 120px;
+}
+.to_meals a {
+  text-decoration: none;
+  color: black;
+  font-size: 110%;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.add_food {
+  width: 100px;
+}
+
+.add_food a{
+  text-decoration: none;
+  color: black;
+  font-size: 110%;
+  font-family: 'Architects Daughter', cursive;
+}
+
+h2.food_name {
+  font-family: "Annie Use Your Telescope";
+  font-size: 200%;
+  border: 2px solid;
+  background-color: white;
+  width: 100px;
+  padding-left: 5px;
+}
+
+.single_food {
+  background-image: url('food_background1.png');
+  position: relative;
+  border: 2px solid;
+  border-radius: 20px;
+  width: 150px;
+  padding-left: 15px;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 2vw;
+  margin-left: 43vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
+.single_food a {
+  text-decoration: none;
+  color: black;
+  font-size: 125%;
+  font-family: 'Indie Flower';
+}
+
+#meals_button {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+#meal_button {
+  width: 35px;
 }

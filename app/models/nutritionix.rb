@@ -18,7 +18,7 @@ class Nutritionix < ActiveRecord::Base
  	search_url = [
  		API_ROOT_URL,
  		URI.escape(term),
- 		'?results=0:7',
+ 		'?results=0:4',
  		FIELDS,
  		APP_ID,
  		APP_KEY

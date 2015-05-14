@@ -1,38 +1,42 @@
-<div id= "show_foods">
-	<%= link_to '+ NutritionIX', add_info_food_path %><br>
+<div id="show_food">
+	<%= button_tag(:class => 'food_info') do %>
+		<%= link_to '+ NutritionIX', add_info_food_path %><br>
+	<% end %>
 	
 <h1> Nutritional Breakdown </h2>
 
-	<h2 class = "name">
+	<h2>
 		<%= "Food: #{@food[:name]}" %>
 	</h2>
 
-	<h2 class = "calories">
+	<h2>
 		<%= "Calories: #{@food[:calories]} calories" %>
 	</h2>
 
-	<h2 class = "fat_calories">
+	<h2>
 		<%= "Fat Calories: #{@food[:fat_calories]} calories" %>
 	</h2>
 
-	<h2 class = "carbohydrates">
+	<h2>
 		<%= "Carbs: #{@food[:carbohydrates]} g\'s" %>
 	</h2>
 
-	<h2 class = "fats">
+	<h2>
 		<%= "Fat: #{@food[:fats]} g\'s" %>
 	</h2>
 
-	<h2 class = "protein">
+	<h2>
 		<%= "Protein: #{@food[:protein]} g\'s" %>
 	</h2>
 
-	<%= form_tag user_path(session[:current_user]), method: :get do %>
-		<%= button_tag 'Meals' %>
-	<% end %><br>
-	<br>
-	<%= form_tag :back, method: :get do %>
-		<%= button_tag 'Meal' %>
-	<% end %><br>
+	<div id= "meals_button">
+		<%= form_tag user_path(session[:current_user]), method: :get do %>
+			<%= button_tag 'Meals' %>
+		<% end %>
+	</div>	
+	<div id= "meal_button">	
+		<%= form_tag :back, method: :get do %>
+			<%= button_tag 'Meal' %>
+		<% end %>
+	</div>	
 </div>
-

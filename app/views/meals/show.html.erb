@@ -1,7 +1,11 @@
-<%= link_to 'Back to meals', user_path(session[:current_user]) %>
-<h2><%= @meal.name %></h2>
-<%= link_to '+ Food', add_food_meal_path(@meal) %><br>
+<%= button_tag(:class => 'to_meals') do %>
+	<%= link_to 'Back to meals', user_path(session[:current_user]) %>
+<% end %>	
+<%= button_tag(:class => 'add_food') do %>
+	<%= link_to '+ Food', add_food_meal_path(@meal) %><br>
+<% end %>
+<h2 class="food_name"><%= @meal.name %></h2>
 <hr>
 <% @meal.foods.each do |food| %>
-	<li><%= link_to food.name, food %></li>
+	<li class= 'single_food'><%= link_to food.name, food %></li>
 <% end %>

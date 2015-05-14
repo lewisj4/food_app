@@ -1,9 +1,16 @@
-<%= link_to 'Back to meals', user_path(session[:current_user]) %><br>
-<br>
-<%= form_for @meal do |f| %>
+<div id="new_meal">
+	<%= button_tag(:class => 'back_meals_button') do %>
+		<%= link_to 'Back to meals', user_path(session[:current_user]) %><br>
+		<% end %>
+		<br>
 
-	<%= f.label :name %><br>
-	<%= f.text_field :name %><br>
-<br>
-	<%= f.submit %><br>
-<% end %>	
+	<div id="meal_form">	
+		<%= form_for @meal do |f| %>
+
+			<a id="meal_name"><%= f.label :name, 'Meal Name:' %></a>
+			<%= f.text_field :name %><br>
+		<br>
+			<a id="meal_create"><%= f.submit %></a><br>
+		<% end %>
+	</div>
+</div>	
