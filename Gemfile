@@ -50,4 +50,4 @@ group :development, :test do
   gem 'rails_12factor', group: :production
 end
 
-ruby  "2.2.1"
+ruby  "2.1.2"
