@@ -28,7 +28,6 @@ gem 'httparty'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'ruby', '~> 2.0.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -48,6 +47,7 @@ group :development, :test do
 
   gem 'pry-rails'
 
-  gem 'rails_12factor'
+  gem 'rails_12factor', group: :production
 end
 
+ruby  "2.2.1"
