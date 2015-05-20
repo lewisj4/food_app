@@ -32,7 +32,7 @@
 
 #session_title {
   box-sizing: content-box;
-  background-image: url(<%= /images/title_bg2.png 'title_bg2.png' %>);
+  background-image: url(<%= /assets/title_bg2.png 'title_bg2.png' %>);
   border: 2px solid black;
   border-radius: 17px;
   font-family: "Revalia";
@@ -49,7 +49,7 @@
 
 #sign_in_nav {
   box-sizing: content-box;
-	background-image: url(<%= /images/title_background1.png 'title_background1.png' %>);
+	background-image: url(<%= /assets/title_background1.png 'title_background1.png' %>);
 	height: 100px;
 	width: 190px;
   position: relative;
@@ -76,7 +76,7 @@
 
 #login_form {
   box-sizing: content-box;
-  background-image: url(<%= /images/title_background4.png 'title_background4.png' %>);
+  background-image: url(<%= /assets/title_background4.png 'title_background4.png' %>);
   border: 2px solid;
   position: relative;
   margin-top: 70px;
@@ -95,7 +95,7 @@
 
 #create_user {
   box-sizing: content-box;
-  background-image: url(<%= /images/title_background4.png 'title_background4.png' %>);
+  background-image: url(<%= /assets/title_background4.png 'title_background4.png' %>);
   border: 2px solid;
   position: relative;
   margin-top: 70px;
@@ -127,14 +127,14 @@
 	font-family: 'Righteous', cursive;
   border: 5px solid;
   width: 150px;
-  background-image: url(<%= /images/meal_background1 'meal_background1.png' %>);
+  background-image: url(<%= /assets/meal_background1 'meal_background1.png' %>);
 }
 
 #meal_profile h1 {
   font-family: 'Righteous', cursive;
   border: 5px solid;
   width: 150px;
-  background-image: url(<%= /images/meal_background1 'meal_background1.png' %>);
+  background-image: url(<%= /assets/meal_background1 'meal_background1.png' %>);
 }
 
 .to_start_button a, .new_meal_button a {
@@ -146,7 +146,7 @@
 }
 
 .single_meal {
-  background-image: url(<%= /images/food_background2 'food_background2.png' %>);
+  background-image: url(<%= /assets/food_background2 'food_background2.png' %>);
   position: relative;
   border: 2px solid;
   border-radius: 20px;
@@ -197,7 +197,7 @@
 }
 
 a#meal_name {
-  background-image: url(<%= /images/bluewood 'bluewood.png' %>);
+  background-image: url(<%= /assets/bluewood 'bluewood.png' %>);
   position: relative;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -210,7 +210,7 @@ a#meal_name {
 
 #meal_form {
   box-sizing: content-box;
-  background-image: url(<%= /images/greenwood 'greenwood.png' %>);
+  background-image: url(<%= /assets/greenwood 'greenwood.png' %>);
   background-repeat: repeat-x, repeat;
   border: 2px solid;
   position: relative;
@@ -236,7 +236,7 @@ a#meal_name {
 
 #food_form {
   box-sizing: content-box;
-  background-image: url(<%= /images/greenwood 'greenwood.png' %>);
+  background-image: url(<%= /assets/greenwood 'greenwood.png' %>);
   background-repeat: repeat-x, repeat;
   border: 2px solid;
   position: relative;
@@ -268,7 +268,7 @@ a#meal_name {
 
 #show_food {
   box-sizing: content-box;
-  background-image: url(<%= /images/bluewood 'bluewood.png' %>);
+  background-image: url(<%= /assets/bluewood 'bluewood.png' %>);
   background-repeat: repeat-x, repeat;
   border: 2px solid;
   position: relative;
@@ -318,7 +318,7 @@ h2.food_name {
 }
 
 .single_food {
-  background-image: url(<%= /images/food_background1 'food_background1.png' %>);
+  background-image: url(<%= /assets/food_background1 'food_background1.png' %>);
   position: relative;
   border: 2px solid;
   border-radius: 20px;
