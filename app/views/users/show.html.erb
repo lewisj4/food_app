@@ -9,7 +9,7 @@
 		<%= link_to '+ Meal', new_meal_path %><br>
 	<% end %>	
 	<hr>
-
+<!-- shows each meal created by specific user -->
 	<% @user.meals.each do |meal| %>
 		<li class= 'single_meal'> <%= link_to meal.name, meal %> </li>
 

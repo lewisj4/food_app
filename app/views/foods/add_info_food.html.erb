@@ -5,9 +5,12 @@
 	</h2>
 
 <% @results.each do |result| %>
-	<ul><%= result.total_hits %></ul>
-	<ul><%= result.max_score %></ul>
-	<ul><%= result.hits %></ul>
+	<ul><%= result.hits.fields.item_name %></ul>
+	<ul><%= result.hits.fields.nf_calories %></ul>
+	<ul><%= result.hits.fields.nf_calories_from_fat %></ul>
+	<ul><%= result.hits.fields.nf_total_carbohydrates %></ul>
+	<ul><%= result.hits.fields.nf_total_fat %></ul>
+	<ul><%= result.hits.fields.nf_protein %></ul>
 <% end %>
 	
 

@@ -34,9 +34,9 @@ class FoodsController < ApplicationController
 		@food = Food.find(params[:id])	
 		@results = Nutritionix.search(@food.name) 
 
-		# redirect_to add_info_food_path
-	 	# render :add_info_food
-	   render json: @results
+		#redirect_to add_info_food_path
+	 	#render :add_info_food
+	  render json: @results
 	end	
 	
 	def create

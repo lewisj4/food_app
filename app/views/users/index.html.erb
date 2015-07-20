@@ -1,5 +1,7 @@
-<h1> Meal Logg.r </h1>
+<div id = "meal_recorder">
+	<h1> Track your meal </h1>
 
-<%= link_to 'Record Meal', user_path(session[:current_user]) %>
-
-<!-- File no longer needed -->
+	<%= form_tag user_path(session[:current_user]), method: :get do %>
+	<%= button_tag 'Record Meal' %>
+	<% end %>
+</div>
